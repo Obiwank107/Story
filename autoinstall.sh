@@ -39,7 +39,6 @@ sleep 3
 echo "Downloading and installing Story-Geth binary..."
 sleep 3
 cd $HOME
-rm -rf bin
 wget https://story-geth-binaries.s3.us-west-1.amazonaws.com/geth-public/geth-linux-amd64-0.9.3-b224fdf.tar.gz
 tar -xzvf geth-linux-amd64-0.9.3-b224fdf.tar.gz
 [ ! -d "$HOME/go/bin" ] && mkdir -p $HOME/go/bin
@@ -48,6 +47,7 @@ if ! grep -q "$HOME/go/bin" $HOME/.bash_profile; then
 fi
 sudo cp geth-linux-amd64-0.9.3-b224fdf/geth $HOME/go/bin/story-geth
 source $HOME/.bash_profile
+rm geth-linux-amd64-0.9.3-b224fdf.tar.gz
 mkdir -p ~/.story/story
 mkdir -p ~/.story/geth
 story-geth version
