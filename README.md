@@ -9,4 +9,6 @@ This script provides a one-liner solution to install, update, and check the stat
 - Go (version 1.21 or later)
 
 ## To run use this command on your VPS
-curl -sSL https://raw.githubusercontent.com/Obiwank107/Story/refs/heads/main/bootstrap.sh | bash
+```bash
+curl -sSL https://raw.githubusercontent.com/Obiwank107/Story/refs/heads/main/autoinstall.sh | bash
+```
