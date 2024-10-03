@@ -48,6 +48,7 @@ fi
 sudo cp geth-linux-amd64-0.9.3-b224fdf/geth $HOME/go/bin/story-geth
 source $HOME/.bash_profile
 rm geth-linux-amd64-0.9.3-b224fdf.tar.gz
+rm -rf geth-linux-amd64-0.9.3-b224fdf
 mkdir -p ~/.story/story
 mkdir -p ~/.story/geth
 story-geth version
