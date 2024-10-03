@@ -100,3 +100,5 @@ sudo systemctl status story --no-pager -l
 echo "Checking sync status..."
 curl -s localhost:26657/status | jq
 echo "Congrats! Installation and setup complete!"
+echo "Command to check Story logs >> sudo journalctl -u story -f -o cat <<"
+echo "Command to check Story-geth logs >> sudo journalctl -u story-geth -f -o cat <<"
