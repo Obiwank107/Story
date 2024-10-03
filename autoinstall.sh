@@ -48,6 +48,8 @@ if ! grep -q "$HOME/go/bin" $HOME/.bash_profile; then
 fi
 sudo cp geth-linux-amd64-0.9.3-b224fdf/geth $HOME/go/bin/story-geth
 source $HOME/.bash_profile
+mkdir -p ~/.story/story
+mkdir -p ~/.story/geth
 story-geth version
 echo "${GREEN}✅ Install story-geth binary Completed${RESET}"
 sleep 3
