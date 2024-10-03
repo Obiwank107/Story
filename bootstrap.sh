@@ -7,7 +7,13 @@ RESET=$(tput sgr0)
 echo "Input your Moniker Name then Press Enter"
 read -p "Enter your moniker name: " MONIKER_NAME
 
-echo "Your moniker name is $MONIKER_NAME"
+# Check if MONIKER_NAME is set
+if [ -z "$MONIKER_NAME" ]; then
+    echo "Moniker name is not set. Exiting..."
+    exit 1
+else
+    echo "Your moniker name is: $MONIKER_NAME"
+fi
 sleep 3
 
 #System Upgrade and Install
