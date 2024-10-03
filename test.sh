@@ -4,21 +4,8 @@ GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 
 store_operator_fid_env() {
-    local input
-    local response
-    
-    read -p "> Your Moniker Name: " input
-    if [[ -z $input ]]; then
-        response=""
-    else [[ $input =~ ^-?[0-9]+$ ]]; then
-        response=$input
-    fi
-
-    if [ "$response" != "null" ] && [ "$response" != "" ]; then
-        MONIKER_NAME=$response
-    else
-        echo "Your Moniker Name is Empty or not set"
-    fi
+    local MONIKER_NAME
+    read -p "> Your Moniker Name: " MONIKER_NAME
 }
 
 echo "Your moniker name is: $MONIKER_NAME"
