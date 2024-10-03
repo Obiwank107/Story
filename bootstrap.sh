@@ -4,24 +4,9 @@ GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 
 #User input Monikor Name
-# Clear the MONIKER_NAME variable
-unset MONIKER_NAME
-
-# Loop until a valid moniker name is entered
-while [ -z "$MONIKER_NAME" ]; do
-    echo "Input your Moniker Name then Press Enter"
-    read -p "Enter your moniker name: " MONIKER_NAME
-    
-    # If MONIKER_NAME is still empty, notify the user
-    if [ -z "$MONIKER_NAME" ]; then
-        echo "Moniker name is required. Please enter a valid moniker name."
-        sleep 2  # Wait for 2 seconds before asking again
-    fi
-done
-
-sleep 10  # Optional: Delay before proceeding
-
+read -p "Enter your moniker name: " MONIKER_NAME
 echo "Your moniker name is: $MONIKER_NAME"
+
 sleep 3
 
 #System Upgrade and Install
