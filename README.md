@@ -6,5 +6,7 @@ This script provides a one-liner solution to install, update, and check the stat
 ## Prerequisites
 - A Unix-based operating system (Linux or macOS)
 - Git and Make installed on the system
-- Go (version 1.21 or later) and a C compiler
+- Go (version 1.21 or later)
 
+## To run use this command on your VPS
+curl -sSL https://raw.githubusercontent.com/Obiwank107/Story/refs/heads/main/bootstrap.sh | bash
