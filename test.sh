@@ -4,7 +4,3 @@ get_moniker_name() {
     echo "Your moniker name is: $MONIKER_NAME"
     sleep 3
 }
-#!/bin/bash
-
-GREEN=$(tput setaf 2)
-RESET=$(tput sgr0)
