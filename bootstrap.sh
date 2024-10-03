@@ -4,6 +4,7 @@ RESET=$(tput sgr0)
 #User input Monikor Name
 echo "Input your Moniker Name then Press Enter"
 read -p "Enter your moniker name: " MONIKER_NAME
+
 echo "Your moniker name is $MONIKER_NAME"
 sleep 3
 #System Upgrade and Install
