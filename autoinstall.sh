@@ -125,6 +125,11 @@ EOF
 echo "${GREEN}✅ Create systemd story.service Completed${RESET}"
 sleep 3
 
+#Upgrade peers
+echo "upgrading peers"
+sleep 3
+curl -sSL https://raw.githubusercontent.com/Obiwank107/Story-Node-Auto-Installer/refs/heads/main/upgradepeers.sh | bash
+
 #Reload systemd, Enable, and Start Services
 echo "Reloading systemd, enabling, and starting Story-Geth and Story services..."
 sleep 3
