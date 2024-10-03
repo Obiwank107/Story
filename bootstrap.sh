@@ -2,6 +2,7 @@
 #User input Monikor Name
 echo "Input your Moniker Name then Press Enter"
 read -p "Enter your moniker name: " MONIKER_NAME
+sleep 1
 echo "Your Monikor Name is $MONIKER_NAME"
 sleep 3
 #System Upgrade and Install
