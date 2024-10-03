@@ -4,6 +4,7 @@ GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 
 #User input Monikor Name
+unset MONIKER_NAME
 echo "Input your Moniker Name then Press Enter"
 read -p "Enter your moniker name: " MONIKER_NAME
 
