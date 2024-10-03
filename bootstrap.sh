@@ -4,10 +4,6 @@ RESET=$(tput sgr0)
 #User input Monikor Name
 echo "Input your Moniker Name then Press Enter"
 read -p "Enter your moniker name: " MONIKER_NAME
-# Check if MONIKER_NAME is passed as an environment variable, otherwise prompt the user
-if [ -z "$MONIKER_NAME" ]; then
-    read -p "Enter your moniker name: " MONIKER_NAME
-fi
 echo "Your moniker name is $MONIKER_NAME"
 sleep 3
 #System Upgrade and Install
