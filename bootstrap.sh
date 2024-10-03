@@ -3,12 +3,6 @@
 GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 
-#User input Monikor Name
-read -p "Enter your moniker name: " MONIKER_NAME
-echo "Your moniker name is: $MONIKER_NAME"
-
-sleep 3
-
 #System Upgrade and Install
 echo "Upgrading and installing dependencies, if needed"
 sleep 3
@@ -81,10 +75,10 @@ echo "${GREEN}✅ Install story binary Completed${RESET}"
 sleep 3
 
 #Initialize the Iliad Network Node
-echo "Initializing Iliad Network Node Moniker Name : $MONIKER_NAME"
+echo "Initializing Iliad Network Node..."
 sleep 3
-story init --network iliad --moniker "$MONIKER_NAME"
-echo "${GREEN}✅ Network iliad $MONIKER_NAME initialize Completed${RESET}"
+story init --network iliad --moniker "Obiwank107_autoinstall"
+echo "${GREEN}✅ Network iliad initialize Completed${RESET}"
 sleep 3
 
 #Create and Configure systemd Service for Story-Geth
