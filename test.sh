@@ -3,4 +3,9 @@
 GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 
-read -p "> Your Moniker Name: " MONIKER_NAME
+# Function to read user input for moniker name
+get_moniker_name() {
+    read -p "Enter your moniker name: " MONIKER_NAME
+    echo "Your moniker name is: $MONIKER_NAME"
+    sleep 3
+}
