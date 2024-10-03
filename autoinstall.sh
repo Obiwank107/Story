@@ -157,9 +157,11 @@ sleep 3
 curl -s localhost:26657/status | jq
 sleep 3
 echo "${GREEN}✅✅✅✅✅ Congrats! Installation and setup completed! ✅✅✅✅✅${RESET}"
-sleep 1
+sleep 3
 echo "Command to check Story logs >> sudo journalctl -u story -f -o cat <<"
-sleep 1
+sleep 3
 echo "Command to check Story-geth logs >> sudo journalctl -u story-geth -f -o cat <<"
-sleep 1
+sleep 3
 echo "Now waiting for your Node 100% sync Before you can create Validator"
+sleep 3
+echo "please use Snapshot for fast syncing > go to Story Protocol Discord for more infomation"
