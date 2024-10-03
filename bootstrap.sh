@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #User input Monikor Name
 echo "Input your Moniker Name then Press Enter"
 read -p "Enter your moniker name: " MONIKER_NAME
