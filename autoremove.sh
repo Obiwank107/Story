@@ -16,3 +16,6 @@ sudo systemctl daemon-reload
 sudo rm -rf $HOME/.story
 sudo rm $HOME/go/bin/story-geth
 sudo rm $HOME/go/bin/story
+
+echo -e "\e[32m🎉 CONGRATULATIONS! 🎉\e[0m"
+echo -e "\e[32m✅ Story Node has been successfully removed from your device! ✅\e[0m"
