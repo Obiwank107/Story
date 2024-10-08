@@ -12,6 +12,7 @@ sudo systemctl disable story-geth && \
 sudo systemctl disable story && \
 sudo rm $HOME/go/bin/story-geth && \
 sudo rm $HOME/go/bin/story && \
+sudo rm $HOME/story && \
 sudo rm -rf $HOME/.story && \
 sudo rm /etc/systemd/system/story-geth.service && \
 sudo rm /etc/systemd/system/story.service && \
